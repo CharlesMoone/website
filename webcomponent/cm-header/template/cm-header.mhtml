@@ -1,0 +1,59 @@
+<style>
+  .cm-header {
+    padding: 55px 0 0;
+  }
+
+  .cm-header:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .logo {
+    float: left;
+    font-family: 'Hiragino Maru Gothic Pro';
+  }
+
+  .logo span {
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .logo span.second-name {
+    padding: 0 0 0 90px;
+  }
+
+  .logo span.first-name {
+    padding: 0 0 0 150px;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row-reverse;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul > li {
+    font-size: 24px;
+    padding: 0 100px 0 0;
+  }
+
+  .navBar {
+    padding: 0 0 0 270.03px;
+    line-height: 72px;
+  }
+</style>
+
+<div class="cm-header">
+  <div class="logo">
+    <span class="second-name">Charles</span>
+    <span class="first-name">Moone</span>
+  </div>
+  <div class="navBar">
+  </div>
+</div>
