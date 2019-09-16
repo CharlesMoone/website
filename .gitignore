@@ -4,4 +4,4 @@ logs
 
 .DS_Store
 
-./server/utils/keys.mjs
+server/utils/keys.mjs
