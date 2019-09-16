@@ -12,7 +12,11 @@ import { logger } from './utils/logger.mjs';
 
 import staticRouter from './routers/staticRouter.mjs';
 
-mongoose.connect('mongodb://localhost:27017/website', { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect('mongodb://localhost:27017/website', {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+});
 
 const app = new Koa();
 
