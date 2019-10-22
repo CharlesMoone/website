@@ -1,7 +1,7 @@
-import code from '../../utils/code.mjs';
-import { logger } from '../../utils/logger.mjs';
+import code from '../../utils/code';
+import { logger } from '../../utils/logger';
 
-import Base from './base.mjs';
+import Base from './base';
 
 class StaticController extends Base {
   constructor() {

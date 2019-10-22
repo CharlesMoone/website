@@ -1,7 +1,7 @@
 import Router from 'koa-router';
 
-import { accessLogger } from '../utils/logger.mjs';
-import htmlHeaders from '../middleware/htmlHeaders.mjs';
+import { accessLogger } from '../utils/logger';
+import htmlHeaders from '../middleware/htmlHeaders';
 
 import staticController from '../controllers/staticController';
 
