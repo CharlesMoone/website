@@ -12,11 +12,17 @@ import { logger } from './utils/logger';
 import staticRouter from './routers/staticRouter';
 import userRouter from './routers/userRouter';
 
-mongoose.connect('mongodb://localhost:27017/website', {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  'mongodb://localhost:27017/website',
+  {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  },
+  err => {
+    err && console.error('err connect to database', err);
+  }
+);
 
 const app = new Koa();
 
@@ -28,7 +34,11 @@ app.use(
     threshold: 2048,
   })
 );
-app.use(serve(path.resolve('static')));
+app.use(
+  serve(path.resolve('static'), {
+    maxage: 10 * 60 * 1000,
+  })
+);
 
 app.use(staticRouter.routes());
 app.use(userRouter.routes());
