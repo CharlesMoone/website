@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.0.1",
-  "description": "",
+  "description": "self website",
   "main": "server/index.js",
   "type": "module",
   "scripts": {
